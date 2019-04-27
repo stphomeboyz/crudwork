@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CC8F9ED-C5C0-4708-A5FB-A29C64D9DAA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>crudwork.Controls</RootNamespace>
+    <AssemblyName>crudwork.Controls</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StpLibrary.pfx</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <!--<SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>-->
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>http://localhost/crudwork.Controls/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\crudwork.Controls.xml</DocumentationFile>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\ChangeEventUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTools\QueryAnalyzer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTools\QueryAnalyzer.Designer.cs">
+      <DependentUpon>QueryAnalyzer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\DatabaseObjectBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTools\DatabaseObjectBrowser.Designer.cs">
+      <DependentUpon>DatabaseObjectBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\ChooseExportTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTools\ChooseExportTable.Designer.cs">
+      <DependentUpon>ChooseExportTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\DataConnectionInfoBuilderDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTools\DataConnectionInfoBuilderDialogBox.Designer.cs">
+      <DependentUpon>DataConnectionInfoBuilderDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\DynamicEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTools\DynamicEditorForm.Designer.cs">
+      <DependentUpon>DynamicEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\FileImportBuilderDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTools\FileImportBuilderDialogBox.Designer.cs">
+      <DependentUpon>FileImportBuilderDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\ObjectViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTools\ObjectViewer.Designer.cs">
+      <DependentUpon>ObjectViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\PivotTableEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTools\PivotTableEditor.Designer.cs">
+      <DependentUpon>PivotTableEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\SQLiteQueryAnalyzer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTools\SQLiteQueryAnalyzer.Designer.cs">
+      <DependentUpon>SQLiteQueryAnalyzer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\IConnectionStringBuilder.cs" />
+    <Compile Include="DataTools\Internal\SQLiteConnectionStringBuilder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTools\Internal\SQLiteConnectionStringBuilder.Designer.cs">
+      <DependentUpon>SQLiteConnectionStringBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extender\ExtendedFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormControls\ComboBoxForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\ComboBoxForm.Designer.cs">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\ConnectionStringForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\ConnectionStringForm.designer.cs">
+      <DependentUpon>ConnectionStringForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\TextBoxForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\TextBoxForm.Designer.cs">
+      <DependentUpon>TextBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GDI\UserControlEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDI\UserControlEx.Designer.cs">
+      <DependentUpon>UserControlEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Measurements\PerformanceChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Measurements\PerformanceChart.Designer.cs">
+      <DependentUpon>PerformanceChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Measurements\PerformanceCounter.cs" />
+    <Compile Include="Prompts\ChooseListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prompts\ChooseListBox.Designer.cs">
+      <DependentUpon>ChooseListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlManager.cs" />
+    <Compile Include="DataTools\ConnectionStringBuilderDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTools\ConnectionStringBuilderDialogBox.Designer.cs">
+      <DependentUpon>ConnectionStringBuilderDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\Internal\RDBMSConnectionStringBuilder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTools\Internal\RDBMSConnectionStringBuilder.Designer.cs">
+      <DependentUpon>RDBMSConnectionStringBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\DataColumnMapper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTools\DataColumnMapper.Designer.cs">
+      <DependentUpon>DataColumnMapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetViewer\DataSetViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSetViewer\DataSetViewer.Designer.cs">
+      <DependentUpon>DataSetViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetViewer\QueryAnalyzer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSetViewer\QueryAnalyzer.Designer.cs">
+      <DependentUpon>QueryAnalyzer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetViewer\QueryResultsViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSetViewer\QueryResultsViewer.Designer.cs">
+      <DependentUpon>QueryResultsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools\DataTableAnalysisTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTools\DataTableAnalysisTool.Designer.cs">
+      <DependentUpon>DataTableAnalysisTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extender\ExtendedDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Prompts\SelectableListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prompts\SelectableListBox.designer.cs">
+      <DependentUpon>SelectableListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prompts\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prompts\InputBox.designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataSetViewer\SimpleDataRelationViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSetViewer\SimpleDataRelationViewer.Designer.cs">
+      <DependentUpon>SimpleDataRelationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetViewer\SimpleDataSetViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSetViewer\SimpleDataSetViewer.Designer.cs">
+      <DependentUpon>SimpleDataSetViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetViewer\SimpleMetaDataViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSetViewer\SimpleMetaDataViewer.Designer.cs">
+      <DependentUpon>SimpleMetaDataViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetViewer\SimpleXMLViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSetViewer\SimpleXMLViewer.Designer.cs">
+      <DependentUpon>SimpleXMLViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Extender\ScrollablePictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Extender\ScrollablePictureBox.designer.cs">
+      <DependentUpon>ScrollablePictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prompts\SelectListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prompts\SelectListBox.Designer.cs">
+      <DependentUpon>SelectListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetViewer\SimpleDataSetViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSetViewer\SimpleDataSetViewerForm.Designer.cs">
+      <DependentUpon>SimpleDataSetViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\DailySchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\DailySchedule.designer.cs">
+      <DependentUpon>DailySchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\DailyScheduleFreqOccur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\DailyScheduleFreqOccur.designer.cs">
+      <DependentUpon>DailyScheduleFreqOccur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\HolidaySchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\HolidaySchedule.designer.cs">
+      <DependentUpon>HolidaySchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskScheduler\ISchedule.cs" />
+    <Compile Include="TaskScheduler\MainDaySchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\MainDaySchedule.designer.cs">
+      <DependentUpon>MainDaySchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\MonthlySchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\MonthlySchedule.designer.cs">
+      <DependentUpon>MonthlySchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\MultipleSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\MultipleSchedule.designer.cs">
+      <DependentUpon>MultipleSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\OnceSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\OnceSchedule.designer.cs">
+      <DependentUpon>OnceSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskScheduler\ScheduleLib.cs" />
+    <Compile Include="TaskScheduler\Internal\WeeklySchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\WeeklySchedule.designer.cs">
+      <DependentUpon>WeeklySchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\WeeklyScheduleFreqOccur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\Internal\WeeklyScheduleFreqOccur.designer.cs">
+      <DependentUpon>WeeklyScheduleFreqOccur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prompts\TextDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prompts\TextDialog.designer.cs">
+      <DependentUpon>TextDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizard.Designer.cs">
+      <DependentUpon>DataExportWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\ChooseDestination.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\ChooseDestination.Designer.cs">
+      <DependentUpon>ChooseDestination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\ChooseSource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\ChooseSource.Designer.cs">
+      <DependentUpon>ChooseSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\ChooseTables.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\ChooseTables.Designer.cs">
+      <DependentUpon>ChooseTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\Introduction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\Introduction.Designer.cs">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\Summary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\DataExportWizardControls\Summary.Designer.cs">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\IWizardControl.cs" />
+    <Compile Include="Wizard\OpenFileWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizard.Designer.cs">
+      <DependentUpon>OpenFileWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\FileImportDelegates.cs" />
+    <Compile Include="Wizard\OpenFileWizardControls\InputDataSourceType.cs" />
+    <Compile Include="Wizard\OpenFileWizardControls\OpenFileResult.cs" />
+    <Compile Include="Wizard\OpenFileWizardControls\HeaderPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\HeaderPane.Designer.cs">
+      <DependentUpon>HeaderPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\Intro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\LHSPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\LHSPane.Designer.cs">
+      <DependentUpon>LHSPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\ChooseInputSource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\ChooseInputSource.Designer.cs">
+      <DependentUpon>ChooseInputSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\MapDataField.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\MapDataField.Designer.cs">
+      <DependentUpon>MapDataField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\Summary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\OpenFileWizardControls\Summary.Designer.cs">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\PivotTableWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\PivotTableWizard.Designer.cs">
+      <DependentUpon>PivotTableWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\PivotTableWizardControls\Intro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\PivotTableWizardControls\Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\Wizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\Wizard.Designer.cs">
+      <DependentUpon>Wizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardEventHandlers.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataTools\QueryAnalyzer.resx">
+      <DependentUpon>QueryAnalyzer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\DatabaseObjectBrowser.resx">
+      <DependentUpon>DatabaseObjectBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\ChooseExportTable.resx">
+      <DependentUpon>ChooseExportTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\DataConnectionInfoBuilderDialogBox.resx">
+      <DependentUpon>DataConnectionInfoBuilderDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\DynamicEditorForm.resx">
+      <DependentUpon>DynamicEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\FileImportBuilderDialogBox.resx">
+      <DependentUpon>FileImportBuilderDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\ObjectViewer.resx">
+      <DependentUpon>ObjectViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\PivotTableEditor.resx">
+      <DependentUpon>PivotTableEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\SQLiteQueryAnalyzer.resx">
+      <DependentUpon>SQLiteQueryAnalyzer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\Internal\SQLiteConnectionStringBuilder.resx">
+      <DependentUpon>SQLiteConnectionStringBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extender\ExtendedDataGridView.resx">
+      <DependentUpon>ExtendedDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\ComboBoxForm.resx">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\ConnectionStringForm.resx">
+      <DependentUpon>ConnectionStringForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\TextBoxForm.resx">
+      <DependentUpon>TextBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDI\UserControlEx.resx">
+      <DependentUpon>UserControlEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prompts\ChooseListBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChooseListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\ConnectionStringBuilderDialogBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConnectionStringBuilderDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\Internal\RDBMSConnectionStringBuilder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RDBMSConnectionStringBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\DataColumnMapper.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataColumnMapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSetViewer\DataSetViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataSetViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSetViewer\QueryAnalyzer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryAnalyzer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSetViewer\QueryResultsViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryResultsViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTools\DataTableAnalysisTool.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataTableAnalysisTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prompts\SelectableListBox.resx">
+      <DependentUpon>SelectableListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prompts\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSetViewer\SimpleDataRelationViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimpleDataRelationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSetViewer\SimpleDataSetViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimpleDataSetViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSetViewer\SimpleMetaDataViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimpleMetaDataViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSetViewer\SimpleXMLViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimpleXMLViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extender\ScrollablePictureBox.resx">
+      <DependentUpon>ScrollablePictureBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prompts\SelectListBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSetViewer\SimpleDataSetViewerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimpleDataSetViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskScheduler\Internal\DailySchedule.resx">
+      <DependentUpon>DailySchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskScheduler\Internal\DailyScheduleFreqOccur.resx">
+      <DependentUpon>DailyScheduleFreqOccur.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskScheduler\Internal\HolidaySchedule.resx">
+      <DependentUpon>HolidaySchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskScheduler\MainDaySchedule.resx">
+      <DependentUpon>MainDaySchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskScheduler\Internal\MonthlySchedule.resx">
+      <DependentUpon>MonthlySchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskScheduler\Internal\MultipleSchedule.resx">
+      <DependentUpon>MultipleSchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskScheduler\Internal\OnceSchedule.resx">
+      <DependentUpon>OnceSchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskScheduler\Internal\WeeklySchedule.resx">
+      <DependentUpon>WeeklySchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskScheduler\Internal\WeeklyScheduleFreqOccur.resx">
+      <DependentUpon>WeeklyScheduleFreqOccur.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prompts\TextDialog.resx">
+      <DependentUpon>TextDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\DataExportWizardControls\ChooseDestination.resx">
+      <DependentUpon>ChooseDestination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\DataExportWizardControls\ChooseSource.resx">
+      <DependentUpon>ChooseSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\DataExportWizardControls\ChooseTables.resx">
+      <DependentUpon>ChooseTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\DataExportWizardControls\Introduction.resx">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\DataExportWizardControls\Summary.resx">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\OpenFileWizard.resx">
+      <DependentUpon>OpenFileWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\OpenFileWizardControls\HeaderPane.resx">
+      <DependentUpon>HeaderPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\OpenFileWizardControls\Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\OpenFileWizardControls\LHSPane.resx">
+      <DependentUpon>LHSPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\OpenFileWizardControls\ChooseInputSource.resx">
+      <DependentUpon>ChooseInputSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\OpenFileWizardControls\MapDataField.resx">
+      <DependentUpon>MapDataField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\OpenFileWizardControls\Summary.resx">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\PivotTableWizardControls\Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Wizard.resx">
+      <DependentUpon>Wizard.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StpLibrary.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\cw.DataAccess.csproj">
+      <Project>{903A58EA-84CA-4852-9BF8-0483CEB0244B}</Project>
+      <Name>cw.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataSetTools\cw.DataSetTools.csproj">
+      <Project>{E1BED35C-916C-4670-9699-933CFE9FE910}</Project>
+      <Name>cw.DataSetTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataWarehouse\cw.DataWarehouse.csproj">
+      <Project>{B880468D-BA44-425E-89DB-DBA3E0932B68}</Project>
+      <Name>cw.DataWarehouse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynamicRuntime\cw.DynamicRuntime.csproj">
+      <Project>{98676B67-8DED-4CFE-8A8E-1AACE26FF778}</Project>
+      <Name>cw.DynamicRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileImporters\cw.FileImporters.csproj">
+      <Project>{134BD6EE-3B5E-447F-A114-ACE732EACDD8}</Project>
+      <Name>cw.FileImporters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\cw.Models.csproj">
+      <Project>{148E9F16-6199-42C1-864C-ADBF92E4F789}</Project>
+      <Name>cw.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MultiThreading\cw.MultiThreading.csproj">
+      <Project>{57C13A9E-12FC-4CAE-8B0F-E1A848163538}</Project>
+      <Name>cw.MultiThreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\cw.Utilities.csproj">
+      <Project>{C944C222-B65E-4D96-9BFF-043C88CE7984}</Project>
+      <Name>cw.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_UndoHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SychronizeListHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Collapse_large.bmp" />
+    <Content Include="Resources\Expand_large.bmp" />
+    <None Include="Resources\ExportIcon_50x50_px.JPG" />
+    <None Include="Resources\ExportIcon_100x100_px.JPG" />
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LogViewer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties StartDate="20091213" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

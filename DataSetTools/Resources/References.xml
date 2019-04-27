@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<QueryAnythingReferences>
+	<!-- DML Statements -->
+	<Statement Key="Select"			Value="SELECT|FROM|WHERE|GROUP BY|HAVING|ORDER BY"		Required="SELECT|FROM" />
+	<Statement Key="Insert"			Value="INSERT INTO|VALUES|SELECT"						Required="INSERT INTO" />
+	
+	<!--<Statement Key="InsertSelect"	Value="INSERT INTO|SELECT"								Required="*" />-->
+	<Statement Key="Update"			Value="UPDATE|SET|WHERE"								Required="UPDATE|SET" />
+	<Statement Key="Delete"			Value="DELETE|WHERE"									Required="DELETE" />
+
+	<!-- DDL Statements -->
+	<Statement Key="CreateTable"	Value="CREATE TABLE"									Required="*" />
+	<Statement Key="DropTable"		Value="DROP TABLE"										Required="*" />
+	
+	<!-- Query Anything Statements -->
+	<Statement Key="OpenDatabase"	Value="OPEN DATABASE|AS|PROVIDER|SELECT|AS TABLE"		Required="OPEN DATABASE|SELECT|AS TABLE" />
+	<Statement Key="OpenFile"		Value="OPEN FILE|OPTION|AS TABLE"						Required="OPEN FILE" />
+	<Statement Key="SaveDataSet"	Value="SAVE DATASET|AS FILE|OPTION"						Required="SAVE DATASET|AS FILE" />
+	<Statement Key="SaveDataTable"	Value="SAVE TABLE|AS FILE|OPTION"						Required="SAVE TABLE|AS FILE" />
+	<Statement Key="Commit"			Value="COMMIT"											Required="*" />
+	<Statement Key="Rollback"		Value="ROLLBACK"										Required="*" />
+	<Statement Key="Clear"			Value="CLEAR|TABLE"										Required="CLEAR" />
+	<Statement Key="List"			Value="LIST|TABLES|COLUMNS"								Required="LIST" />
+	<Statement Key="ViewDataSet"	Value="VIEW DATASET"									Required="*" />
+</QueryAnythingReferences>

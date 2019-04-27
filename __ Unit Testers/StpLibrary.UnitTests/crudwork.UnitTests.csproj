@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6DCFCCB-2EC5-4AE0-90DF-AAB36389D485}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>crudwork.UnitTests</RootNamespace>
+    <AssemblyName>crudwork.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.LoadTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundTests.cs" />
+    <Compile Include="DatawarehouseTest.cs" />
+    <Compile Include="DynamicTest.cs" />
+    <Compile Include="MultiThreadingTest.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ParsingTest.cs" />
+    <Compile Include="SecurityTest.cs" />
+    <Compile Include="TemplateManagerTester.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LoadTests\LoadTest1.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Lolz.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Controls\crudwork.Controls.csproj">
+      <Project>{7CC8F9ED-C5C0-4708-A5FB-A29C64D9DAA8}</Project>
+      <Name>crudwork.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\crudwork.DataAccess.csproj">
+      <Project>{903A58EA-84CA-4852-9BF8-0483CEB0244B}</Project>
+      <Name>crudwork.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataSetTools\crudwork.DataSetTools.csproj">
+      <Project>{E1BED35C-916C-4670-9699-933CFE9FE910}</Project>
+      <Name>crudwork.DataSetTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataWarehouse\crudwork.DataWarehouse.csproj">
+      <Project>{B880468D-BA44-425E-89DB-DBA3E0932B68}</Project>
+      <Name>crudwork.DataWarehouse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DynamicRuntime\crudwork.DynamicRuntime.csproj">
+      <Project>{98676B67-8DED-4CFE-8A8E-1AACE26FF778}</Project>
+      <Name>crudwork.DynamicRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Executables\crudwork.Executables.csproj">
+      <Project>{6308F40C-F201-477F-B504-C41913731E3E}</Project>
+      <Name>crudwork.Executables</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FileImporters\crudwork.FileImporters.csproj">
+      <Project>{134BD6EE-3B5E-447F-A114-ACE732EACDD8}</Project>
+      <Name>crudwork.FileImporters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Models\crudwork.Models.csproj">
+      <Project>{148E9F16-6199-42C1-864C-ADBF92E4F789}</Project>
+      <Name>crudwork.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MultiThreading\crudwork.MultiThreading.csproj">
+      <Project>{57C13A9E-12FC-4CAE-8B0F-E1A848163538}</Project>
+      <Name>crudwork.MultiThreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Network\crudwork.Network.csproj">
+      <Project>{D2777FBF-52CD-4E9A-9153-28465BE382A5}</Project>
+      <Name>crudwork.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Parsers\crudwork.Parsers.csproj">
+      <Project>{B268D6C8-7375-4A18-8E8E-83C52F61BCC0}</Project>
+      <Name>crudwork.Parsers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProperCasingVB\crudwork.ProperCasingVB.vbproj">
+      <Project>{97FB9F97-FFBB-459D-8586-6DE5BA543CDC}</Project>
+      <Name>crudwork.ProperCasingVB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilities\crudwork.Utilities.csproj">
+      <Project>{C944C222-B65E-4D96-9BFF-043C88CE7984}</Project>
+      <Name>crudwork.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties StartDate="20091213" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

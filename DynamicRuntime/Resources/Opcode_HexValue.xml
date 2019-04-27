@@ -1,0 +1,221 @@
+﻿<Opcodes>
+	<Opcode HexValue="0x00" Name="nop"/>
+	<Opcode HexValue="0x01" Name="break"/>
+	<Opcode HexValue="0x02" Name="ldarg.0"/>
+	<Opcode HexValue="0x03" Name="ldarg.1"/>
+	<Opcode HexValue="0x04" Name="ldarg.2"/>
+	<Opcode HexValue="0x05" Name="ldarg.3"/>
+	<Opcode HexValue="0x06" Name="ldloc.0"/>
+	<Opcode HexValue="0x07" Name="ldloc.1"/>
+	<Opcode HexValue="0x08" Name="ldloc.2"/>
+	<Opcode HexValue="0x09" Name="ldloc.3"/>
+	<Opcode HexValue="0x0A" Name="stloc.0"/>
+	<Opcode HexValue="0x0B" Name="stloc.1"/>
+	<Opcode HexValue="0x0C" Name="stloc.2"/>
+	<Opcode HexValue="0x0D" Name="stloc.3"/>
+	<Opcode HexValue="0x0E" Name="ldarg.s"/>
+	<Opcode HexValue="0x0F" Name="ldarga.s"/>
+	<Opcode HexValue="0x10" Name="starg.s"/>
+	<Opcode HexValue="0x11" Name="ldloc.s"/>
+	<Opcode HexValue="0x12" Name="ldloca.s"/>
+	<Opcode HexValue="0x13" Name="stloc.s"/>
+	<Opcode HexValue="0x14" Name="ldnull"/>
+	<Opcode HexValue="0x15" Name="ldc.i4.m1"/>
+	<Opcode HexValue="0x16" Name="ldc.i4.0"/>
+	<Opcode HexValue="0x17" Name="ldc.i4.1"/>
+	<Opcode HexValue="0x18" Name="ldc.i4.2"/>
+	<Opcode HexValue="0x19" Name="ldc.i4.3"/>
+	<Opcode HexValue="0x1A" Name="ldc.i4.4"/>
+	<Opcode HexValue="0x1B" Name="ldc.i4.5"/>
+	<Opcode HexValue="0x1C" Name="ldc.i4.6"/>
+	<Opcode HexValue="0x1D" Name="ldc.i4.7"/>
+	<Opcode HexValue="0x1E" Name="ldc.i4.8"/>
+	<Opcode HexValue="0x1F" Name="ldc.i4.s"/>
+	<Opcode HexValue="0x20" Name="ldc.i4"/>
+	<Opcode HexValue="0x21" Name="ldc.i8"/>
+	<Opcode HexValue="0x22" Name="ldc.r4"/>
+	<Opcode HexValue="0x23" Name="ldc.r8"/>
+	<Opcode HexValue="0x25" Name="dup"/>
+	<Opcode HexValue="0x26" Name="pop"/>
+	<Opcode HexValue="0x27" Name="jmp"/>
+	<Opcode HexValue="0x28" Name="call"/>
+	<Opcode HexValue="0x29" Name="calli"/>
+	<Opcode HexValue="0x2A" Name="ret"/>
+	<Opcode HexValue="0x2B" Name="br.s"/>
+	<Opcode HexValue="0x2C" Name="brfalse.s"/>
+	<Opcode HexValue="0x2D" Name="brtrue.s"/>
+	<Opcode HexValue="0x2E" Name="beq.s"/>
+	<Opcode HexValue="0x2F" Name="bge.s"/>
+	<Opcode HexValue="0x30" Name="bgt.s"/>
+	<Opcode HexValue="0x31" Name="ble.s"/>
+	<Opcode HexValue="0x32" Name="blt.s"/>
+	<Opcode HexValue="0x33" Name="bne.un.s"/>
+	<Opcode HexValue="0x34" Name="bge.un.s"/>
+	<Opcode HexValue="0x35" Name="bgt.un.s"/>
+	<Opcode HexValue="0x36" Name="ble.un.s"/>
+	<Opcode HexValue="0x37" Name="blt.un.s"/>
+	<Opcode HexValue="0x38" Name="br"/>
+	<Opcode HexValue="0x39" Name="brfalse"/>
+	<Opcode HexValue="0x3A" Name="brtrue"/>
+	<Opcode HexValue="0x3B" Name="beq"/>
+	<Opcode HexValue="0x3C" Name="bge"/>
+	<Opcode HexValue="0x3D" Name="bgt"/>
+	<Opcode HexValue="0x3E" Name="ble"/>
+	<Opcode HexValue="0x3F" Name="blt"/>
+	<Opcode HexValue="0x40" Name="bne.un"/>
+	<Opcode HexValue="0x41" Name="bge.un"/>
+	<Opcode HexValue="0x42" Name="bgt.un"/>
+	<Opcode HexValue="0x43" Name="ble.un"/>
+	<Opcode HexValue="0x44" Name="blt.un"/>
+	<Opcode HexValue="0x45" Name="switch"/>
+	<Opcode HexValue="0x46" Name="ldind.i1"/>
+	<Opcode HexValue="0x47" Name="ldind.u1"/>
+	<Opcode HexValue="0x48" Name="ldind.i2"/>
+	<Opcode HexValue="0x49" Name="ldind.u2"/>
+	<Opcode HexValue="0x4A" Name="ldind.i4"/>
+	<Opcode HexValue="0x4B" Name="ldind.u4"/>
+	<Opcode HexValue="0x4C" Name="ldind.i8"/>
+	<Opcode HexValue="0x4D" Name="ldind.i"/>
+	<Opcode HexValue="0x4E" Name="ldind.r4"/>
+	<Opcode HexValue="0x4F" Name="ldind.r8"/>
+	<Opcode HexValue="0x50" Name="ldind.ref"/>
+	<Opcode HexValue="0x51" Name="stind.ref"/>
+	<Opcode HexValue="0x52" Name="stind.i1"/>
+	<Opcode HexValue="0x53" Name="stind.i2"/>
+	<Opcode HexValue="0x54" Name="stind.i4"/>
+	<Opcode HexValue="0x55" Name="stind.i8"/>
+	<Opcode HexValue="0x56" Name="stind.r4"/>
+	<Opcode HexValue="0x57" Name="stind.r8"/>
+	<Opcode HexValue="0x58" Name="add"/>
+	<Opcode HexValue="0x59" Name="sub"/>
+	<Opcode HexValue="0x5A" Name="mul"/>
+	<Opcode HexValue="0x5B" Name="div"/>
+	<Opcode HexValue="0x5C" Name="div.un"/>
+	<Opcode HexValue="0x5D" Name="rem"/>
+	<Opcode HexValue="0x5E" Name="rem.un"/>
+	<Opcode HexValue="0x5F" Name="and"/>
+	<Opcode HexValue="0x60" Name="or"/>
+	<Opcode HexValue="0x61" Name="xor"/>
+	<Opcode HexValue="0x62" Name="shl"/>
+	<Opcode HexValue="0x63" Name="shr"/>
+	<Opcode HexValue="0x64" Name="shr.un"/>
+	<Opcode HexValue="0x65" Name="neg"/>
+	<Opcode HexValue="0x66" Name="not"/>
+	<Opcode HexValue="0x67" Name="conv.i1"/>
+	<Opcode HexValue="0x68" Name="conv.i2"/>
+	<Opcode HexValue="0x69" Name="conv.i4"/>
+	<Opcode HexValue="0x6A" Name="conv.i8"/>
+	<Opcode HexValue="0x6B" Name="conv.r4"/>
+	<Opcode HexValue="0x6C" Name="conv.r8"/>
+	<Opcode HexValue="0x6D" Name="conv.u4"/>
+	<Opcode HexValue="0x6E" Name="conv.u8"/>
+	<Opcode HexValue="0x6F" Name="callvirt"/>
+	<Opcode HexValue="0x70" Name="cpobj"/>
+	<Opcode HexValue="0x71" Name="ldobj"/>
+	<Opcode HexValue="0x72" Name="ldstr"/>
+	<Opcode HexValue="0x73" Name="newobj"/>
+	<Opcode HexValue="0x74" Name="castclass"/>
+	<Opcode HexValue="0x75" Name="isinst"/>
+	<Opcode HexValue="0x76" Name="conv.r.un"/>
+	<Opcode HexValue="0x79" Name="unbox"/>
+	<Opcode HexValue="0x7A" Name="throw"/>
+	<Opcode HexValue="0x7B" Name="ldfld"/>
+	<Opcode HexValue="0x7C" Name="ldflda"/>
+	<Opcode HexValue="0x7D" Name="stfld"/>
+	<Opcode HexValue="0x7E" Name="ldsfld"/>
+	<Opcode HexValue="0x7F" Name="ldsflda"/>
+	<Opcode HexValue="0x80" Name="stsfld"/>
+	<Opcode HexValue="0x81" Name="stobj"/>
+	<Opcode HexValue="0x82" Name="conv.ovf.i1.un"/>
+	<Opcode HexValue="0x83" Name="conv.ovf.i2.un"/>
+	<Opcode HexValue="0x84" Name="conv.ovf.i4.un"/>
+	<Opcode HexValue="0x85" Name="conv.ovf.i8.un"/>
+	<Opcode HexValue="0x86" Name="conv.ovf.u1.un"/>
+	<Opcode HexValue="0x87" Name="conv.ovf.u2.un"/>
+	<Opcode HexValue="0x88" Name="conv.ovf.u4.un"/>
+	<Opcode HexValue="0x89" Name="conv.ovf.u8.un"/>
+	<Opcode HexValue="0x8A" Name="conv.ovf.i.un"/>
+	<Opcode HexValue="0x8B" Name="conv.ovf.u.un"/>
+	<Opcode HexValue="0x8C" Name="box"/>
+	<Opcode HexValue="0x8D" Name="newarr"/>
+	<Opcode HexValue="0x8E" Name="ldlen"/>
+	<Opcode HexValue="0x8F" Name="ldelema"/>
+	<Opcode HexValue="0x90" Name="ldelem.i1"/>
+	<Opcode HexValue="0x91" Name="ldelem.u1"/>
+	<Opcode HexValue="0x92" Name="ldelem.i2"/>
+	<Opcode HexValue="0x93" Name="ldelem.u2"/>
+	<Opcode HexValue="0x94" Name="ldelem.i4"/>
+	<Opcode HexValue="0x95" Name="ldelem.u4"/>
+	<Opcode HexValue="0x96" Name="ldelem.i8"/>
+	<Opcode HexValue="0x97" Name="ldelem.i"/>
+	<Opcode HexValue="0x98" Name="ldelem.r4"/>
+	<Opcode HexValue="0x99" Name="ldelem.r8"/>
+	<Opcode HexValue="0x9A" Name="ldelem.ref"/>
+	<Opcode HexValue="0x9B" Name="stelem.i"/>
+	<Opcode HexValue="0x9C" Name="stelem.i1"/>
+	<Opcode HexValue="0x9D" Name="stelem.i2"/>
+	<Opcode HexValue="0x9E" Name="stelem.i4"/>
+	<Opcode HexValue="0x9F" Name="stelem.i8"/>
+	<Opcode HexValue="0xA0" Name="stelem.r4"/>
+	<Opcode HexValue="0xA1" Name="stelem.r8"/>
+	<Opcode HexValue="0xA2" Name="stelem.ref"/>
+	<Opcode HexValue="0xA3" Name="ldelem"/>
+	<Opcode HexValue="0xA4" Name="stelem"/>
+	<Opcode HexValue="0xA5" Name="unbox.any"/>
+	<Opcode HexValue="0xB3" Name="conv.ovf.i1"/>
+	<Opcode HexValue="0xB4" Name="conv.ovf.u1"/>
+	<Opcode HexValue="0xB5" Name="conv.ovf.i2"/>
+	<Opcode HexValue="0xB6" Name="conv.ovf.u2"/>
+	<Opcode HexValue="0xB7" Name="conv.ovf.i4"/>
+	<Opcode HexValue="0xB8" Name="conv.ovf.u4"/>
+	<Opcode HexValue="0xB9" Name="conv.ovf.i8"/>
+	<Opcode HexValue="0xBA" Name="conv.ovf.u8"/>
+	<Opcode HexValue="0xC2" Name="refanyval"/>
+	<Opcode HexValue="0xC3" Name="ckfinite"/>
+	<Opcode HexValue="0xC6" Name="mkrefany"/>
+	<Opcode HexValue="0xD0" Name="ldtoken"/>
+	<Opcode HexValue="0xD1" Name="conv.u2"/>
+	<Opcode HexValue="0xD2" Name="conv.u1"/>
+	<Opcode HexValue="0xD3" Name="conv.i"/>
+	<Opcode HexValue="0xD4" Name="conv.ovf.i"/>
+	<Opcode HexValue="0xD5" Name="conv.ovf.u"/>
+	<Opcode HexValue="0xD6" Name="add.ovf"/>
+	<Opcode HexValue="0xD7" Name="add.ovf.un"/>
+	<Opcode HexValue="0xD8" Name="mul.ovf"/>
+	<Opcode HexValue="0xD9" Name="mul.ovf.un"/>
+	<Opcode HexValue="0xDA" Name="sub.ovf"/>
+	<Opcode HexValue="0xDB" Name="sub.ovf.un"/>
+	<Opcode HexValue="0xDC" Name="endfinally"/>
+	<Opcode HexValue="0xDD" Name="leave"/>
+	<Opcode HexValue="0xDE" Name="leave.s"/>
+	<Opcode HexValue="0xDF" Name="stind.i"/>
+	<Opcode HexValue="0xE0" Name="conv.u"/>
+	<Opcode HexValue="0xFE" HexValue2="0x00" Name="arglist"/>
+	<Opcode HexValue="0xFE" HexValue2="0x01" Name="ceq"/>
+	<Opcode HexValue="0xFE" HexValue2="0x02" Name="cgt"/>
+	<Opcode HexValue="0xFE" HexValue2="0x03" Name="cgt.un"/>
+	<Opcode HexValue="0xFE" HexValue2="0x04" Name="clt"/>
+	<Opcode HexValue="0xFE" HexValue2="0x05" Name="clt.un"/>
+	<Opcode HexValue="0xFE" HexValue2="0x06" Name="ldftn"/>
+	<Opcode HexValue="0xFE" HexValue2="0x07" Name="ldvirtftn"/>
+	<Opcode HexValue="0xFE" HexValue2="0x09" Name="ldarg"/>
+	<Opcode HexValue="0xFE" HexValue2="0x0A" Name="ldarga"/>
+	<Opcode HexValue="0xFE" HexValue2="0x0B" Name="starg"/>
+	<Opcode HexValue="0xFE" HexValue2="0x0C" Name="ldloc"/>
+	<Opcode HexValue="0xFE" HexValue2="0x0D" Name="ldloca"/>
+	<Opcode HexValue="0xFE" HexValue2="0x0E" Name="stloc"/>
+	<Opcode HexValue="0xFE" HexValue2="0x0F" Name="localloc"/>
+	<Opcode HexValue="0xFE" HexValue2="0x11" Name="endfilter"/>
+	<Opcode HexValue="0xFE" HexValue2="0x12" Name="unaligned."/>
+	<Opcode HexValue="0xFE" HexValue2="0x13" Name="volatile."/>
+	<Opcode HexValue="0xFE" HexValue2="0x14" Name="tail."/>
+	<Opcode HexValue="0xFE" HexValue2="0x15" Name="initobj"/>
+	<Opcode HexValue="0xFE" HexValue2="0x16" Name="constrained."/>
+	<Opcode HexValue="0xFE" HexValue2="0x17" Name="cpblk"/>
+	<Opcode HexValue="0xFE" HexValue2="0x18" Name="initblk"/>
+	<Opcode HexValue="0xFE" HexValue2="0x19" Name="no."/>
+	<Opcode HexValue="0xFE" HexValue2="0x1A" Name="rethrow"/>
+	<Opcode HexValue="0xFE" HexValue2="0x1C" Name="sizeof"/>
+	<Opcode HexValue="0xFE" HexValue2="0x1D" Name="Refanytype"/>
+	<Opcode HexValue="0xFE" HexValue2="0x1E" Name="readonly"/>
+</Opcodes>

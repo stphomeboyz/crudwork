@@ -1,0 +1,229 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.Controls", "Controls\cw.Controls.csproj", "{7CC8F9ED-C5C0-4708-A5FB-A29C64D9DAA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.DataAccess", "DataAccess\cw.DataAccess.csproj", "{903A58EA-84CA-4852-9BF8-0483CEB0244B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.DataWarehouse", "DataWarehouse\cw.DataWarehouse.csproj", "{B880468D-BA44-425E-89DB-DBA3E0932B68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.DynamicRuntime", "DynamicRuntime\cw.DynamicRuntime.csproj", "{98676B67-8DED-4CFE-8A8E-1AACE26FF778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.Executables", "Executables\cw.Executables.csproj", "{6308F40C-F201-477F-B504-C41913731E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.FileImporters", "FileImporters\cw.FileImporters.csproj", "{134BD6EE-3B5E-447F-A114-ACE732EACDD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.Models", "Models\cw.Models.csproj", "{148E9F16-6199-42C1-864C-ADBF92E4F789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.MultiThreading", "MultiThreading\cw.MultiThreading.csproj", "{57C13A9E-12FC-4CAE-8B0F-E1A848163538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.Network", "Network\cw.Network.csproj", "{D2777FBF-52CD-4E9A-9153-28465BE382A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.Parsers", "Parsers\cw.Parsers.csproj", "{B268D6C8-7375-4A18-8E8E-83C52F61BCC0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "cw.ProperCasingVB", "ProperCasingVB\cw.ProperCasingVB.vbproj", "{97FB9F97-FFBB-459D-8586-6DE5BA543CDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.Utilities", "Utilities\cw.Utilities.csproj", "{C944C222-B65E-4D96-9BFF-043C88CE7984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.DataSetTools", "DataSetTools\cw.DataSetTools.csproj", "{E1BED35C-916C-4670-9699-933CFE9FE910}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{9F225282-268F-4E15-9671-5B602A32BE3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Testings", "Unit Testings", "{46F287E5-DC29-4CEA-853B-8C0E9A142DC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installers", "Installers", "{700E4B28-C410-499D-99F3-8393F17E922D}"
+	ProjectSection(SolutionItems) = preProject
+		ilmergeDLL4.bat = ilmergeDLL4.bat
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "crudwork_vs2010", "__ Installers\crudwork_vs2010\crudwork_vs2010.vdproj", "{7BC836DE-9ED0-458E-82D5-D75E48DAEFA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crudwork", "__ Installers\crudworkMerged_vs2010\crudwork.csproj", "{FEEC485E-3BE9-4DA5-88E5-2F669DAAA3C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cw.Concurrency", "Concurrency\cw.Concurrency.csproj", "{DA2AE2ED-794C-47A0-BC6B-4B39AA8468E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ Binaries", "_ Binaries", "{63880642-8276-4084-8C79-3069246B0B23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "py", "py", "{25C4A32A-7DE4-43C1-835A-38EBF7BE065B}"
+	ProjectSection(SolutionItems) = preProject
+		__ Binaries\py\IronPython.dll = __ Binaries\py\IronPython.dll
+		__ Binaries\py\IronPython.Modules.dll = __ Binaries\py\IronPython.Modules.dll
+		__ Binaries\py\IronPython.Modules.XML = __ Binaries\py\IronPython.Modules.XML
+		__ Binaries\py\IronPython.XML = __ Binaries\py\IronPython.XML
+		__ Binaries\py\Microsoft.Dynamic.dll = __ Binaries\py\Microsoft.Dynamic.dll
+		__ Binaries\py\Microsoft.Scripting.Debugging.dll = __ Binaries\py\Microsoft.Scripting.Debugging.dll
+		__ Binaries\py\Microsoft.Scripting.dll = __ Binaries\py\Microsoft.Scripting.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rb", "rb", "{D90CD275-4AD6-4535-B0C7-401810615BC6}"
+	ProjectSection(SolutionItems) = preProject
+		__ Binaries\rb\IronRuby.dll = __ Binaries\rb\IronRuby.dll
+		__ Binaries\rb\IronRuby.Libraries.dll = __ Binaries\rb\IronRuby.Libraries.dll
+		__ Binaries\rb\IronRuby.Libraries.YAML.dll = __ Binaries\rb\IronRuby.Libraries.YAML.dll
+		__ Binaries\rb\Microsoft.Dynamic.dll = __ Binaries\rb\Microsoft.Dynamic.dll
+		__ Binaries\rb\Microsoft.Scripting.Debugging.dll = __ Binaries\rb\Microsoft.Scripting.Debugging.dll
+		__ Binaries\rb\Microsoft.Scripting.dll = __ Binaries\rb\Microsoft.Scripting.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 17
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs02
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = __\u0020Installers\\crudworkMerged_vs2010\\crudwork.csproj
+		SccProjectTopLevelParentUniqueName1 = crudwork2010.sln
+		SccProjectName1 = __\u0020Installers/crudworkMerged_vs2010
+		SccLocalPath1 = __\u0020Installers\\crudworkMerged_vs2010
+		SccProjectUniqueName2 = __\u0020Installers\\crudwork_vs2010\\crudwork_vs2010.vdproj
+		SccProjectTopLevelParentUniqueName2 = crudwork2010.sln
+		SccProjectName2 = __\u0020Installers/crudwork_vs2010
+		SccLocalPath2 = __\u0020Installers\\crudwork_vs2010
+		SccProjectUniqueName3 = Concurrency\\cw.Concurrency.csproj
+		SccProjectTopLevelParentUniqueName3 = crudwork2010.sln
+		SccProjectName3 = Concurrency
+		SccLocalPath3 = Concurrency
+		SccProjectUniqueName4 = Controls\\cw.Controls.csproj
+		SccProjectTopLevelParentUniqueName4 = crudwork2010.sln
+		SccProjectName4 = Controls
+		SccLocalPath4 = Controls
+		SccProjectUniqueName5 = DataAccess\\cw.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName5 = crudwork2010.sln
+		SccProjectName5 = DataAccess
+		SccLocalPath5 = DataAccess
+		SccProjectUniqueName6 = DataSetTools\\cw.DataSetTools.csproj
+		SccProjectTopLevelParentUniqueName6 = crudwork2010.sln
+		SccProjectName6 = DataSetTools
+		SccLocalPath6 = DataSetTools
+		SccProjectUniqueName7 = DataWarehouse\\cw.DataWarehouse.csproj
+		SccProjectTopLevelParentUniqueName7 = crudwork2010.sln
+		SccProjectName7 = DataWarehouse
+		SccLocalPath7 = DataWarehouse
+		SccProjectUniqueName8 = DynamicRuntime\\cw.DynamicRuntime.csproj
+		SccProjectTopLevelParentUniqueName8 = crudwork2010.sln
+		SccProjectName8 = DynamicRuntime
+		SccLocalPath8 = DynamicRuntime
+		SccProjectUniqueName9 = Executables\\cw.Executables.csproj
+		SccProjectTopLevelParentUniqueName9 = crudwork2010.sln
+		SccProjectName9 = Executables
+		SccLocalPath9 = Executables
+		SccProjectUniqueName10 = FileImporters\\cw.FileImporters.csproj
+		SccProjectTopLevelParentUniqueName10 = crudwork2010.sln
+		SccProjectName10 = FileImporters
+		SccLocalPath10 = FileImporters
+		SccProjectUniqueName11 = Models\\cw.Models.csproj
+		SccProjectTopLevelParentUniqueName11 = crudwork2010.sln
+		SccProjectName11 = Models
+		SccLocalPath11 = Models
+		SccProjectUniqueName12 = MultiThreading\\cw.MultiThreading.csproj
+		SccProjectTopLevelParentUniqueName12 = crudwork2010.sln
+		SccProjectName12 = MultiThreading
+		SccLocalPath12 = MultiThreading
+		SccProjectUniqueName13 = Network\\cw.Network.csproj
+		SccProjectTopLevelParentUniqueName13 = crudwork2010.sln
+		SccProjectName13 = Network
+		SccLocalPath13 = Network
+		SccProjectUniqueName14 = Parsers\\cw.Parsers.csproj
+		SccProjectTopLevelParentUniqueName14 = crudwork2010.sln
+		SccProjectName14 = Parsers
+		SccLocalPath14 = Parsers
+		SccProjectUniqueName15 = ProperCasingVB\\cw.ProperCasingVB.vbproj
+		SccProjectTopLevelParentUniqueName15 = crudwork2010.sln
+		SccProjectName15 = ProperCasingVB
+		SccLocalPath15 = ProperCasingVB
+		SccProjectUniqueName16 = Utilities\\cw.Utilities.csproj
+		SccProjectTopLevelParentUniqueName16 = crudwork2010.sln
+		SccProjectName16 = Utilities
+		SccLocalPath16 = Utilities
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CC8F9ED-C5C0-4708-A5FB-A29C64D9DAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC8F9ED-C5C0-4708-A5FB-A29C64D9DAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC8F9ED-C5C0-4708-A5FB-A29C64D9DAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC8F9ED-C5C0-4708-A5FB-A29C64D9DAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903A58EA-84CA-4852-9BF8-0483CEB0244B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903A58EA-84CA-4852-9BF8-0483CEB0244B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903A58EA-84CA-4852-9BF8-0483CEB0244B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903A58EA-84CA-4852-9BF8-0483CEB0244B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B880468D-BA44-425E-89DB-DBA3E0932B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B880468D-BA44-425E-89DB-DBA3E0932B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B880468D-BA44-425E-89DB-DBA3E0932B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B880468D-BA44-425E-89DB-DBA3E0932B68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98676B67-8DED-4CFE-8A8E-1AACE26FF778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98676B67-8DED-4CFE-8A8E-1AACE26FF778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98676B67-8DED-4CFE-8A8E-1AACE26FF778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98676B67-8DED-4CFE-8A8E-1AACE26FF778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6308F40C-F201-477F-B504-C41913731E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6308F40C-F201-477F-B504-C41913731E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6308F40C-F201-477F-B504-C41913731E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6308F40C-F201-477F-B504-C41913731E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{134BD6EE-3B5E-447F-A114-ACE732EACDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134BD6EE-3B5E-447F-A114-ACE732EACDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134BD6EE-3B5E-447F-A114-ACE732EACDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134BD6EE-3B5E-447F-A114-ACE732EACDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{148E9F16-6199-42C1-864C-ADBF92E4F789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148E9F16-6199-42C1-864C-ADBF92E4F789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148E9F16-6199-42C1-864C-ADBF92E4F789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148E9F16-6199-42C1-864C-ADBF92E4F789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C13A9E-12FC-4CAE-8B0F-E1A848163538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C13A9E-12FC-4CAE-8B0F-E1A848163538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C13A9E-12FC-4CAE-8B0F-E1A848163538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C13A9E-12FC-4CAE-8B0F-E1A848163538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2777FBF-52CD-4E9A-9153-28465BE382A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2777FBF-52CD-4E9A-9153-28465BE382A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2777FBF-52CD-4E9A-9153-28465BE382A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2777FBF-52CD-4E9A-9153-28465BE382A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B268D6C8-7375-4A18-8E8E-83C52F61BCC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B268D6C8-7375-4A18-8E8E-83C52F61BCC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B268D6C8-7375-4A18-8E8E-83C52F61BCC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B268D6C8-7375-4A18-8E8E-83C52F61BCC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FB9F97-FFBB-459D-8586-6DE5BA543CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FB9F97-FFBB-459D-8586-6DE5BA543CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FB9F97-FFBB-459D-8586-6DE5BA543CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FB9F97-FFBB-459D-8586-6DE5BA543CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C944C222-B65E-4D96-9BFF-043C88CE7984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C944C222-B65E-4D96-9BFF-043C88CE7984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C944C222-B65E-4D96-9BFF-043C88CE7984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C944C222-B65E-4D96-9BFF-043C88CE7984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1BED35C-916C-4670-9699-933CFE9FE910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1BED35C-916C-4670-9699-933CFE9FE910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1BED35C-916C-4670-9699-933CFE9FE910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1BED35C-916C-4670-9699-933CFE9FE910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC836DE-9ED0-458E-82D5-D75E48DAEFA8}.Debug|Any CPU.ActiveCfg = Debug
+		{7BC836DE-9ED0-458E-82D5-D75E48DAEFA8}.Release|Any CPU.ActiveCfg = Release
+		{FEEC485E-3BE9-4DA5-88E5-2F669DAAA3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEEC485E-3BE9-4DA5-88E5-2F669DAAA3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEEC485E-3BE9-4DA5-88E5-2F669DAAA3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2AE2ED-794C-47A0-BC6B-4B39AA8468E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2AE2ED-794C-47A0-BC6B-4B39AA8468E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2AE2ED-794C-47A0-BC6B-4B39AA8468E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2AE2ED-794C-47A0-BC6B-4B39AA8468E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{903A58EA-84CA-4852-9BF8-0483CEB0244B} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{B880468D-BA44-425E-89DB-DBA3E0932B68} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{98676B67-8DED-4CFE-8A8E-1AACE26FF778} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{6308F40C-F201-477F-B504-C41913731E3E} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{134BD6EE-3B5E-447F-A114-ACE732EACDD8} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{148E9F16-6199-42C1-864C-ADBF92E4F789} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{57C13A9E-12FC-4CAE-8B0F-E1A848163538} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{D2777FBF-52CD-4E9A-9153-28465BE382A5} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{B268D6C8-7375-4A18-8E8E-83C52F61BCC0} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{97FB9F97-FFBB-459D-8586-6DE5BA543CDC} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{C944C222-B65E-4D96-9BFF-043C88CE7984} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{E1BED35C-916C-4670-9699-933CFE9FE910} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{7CC8F9ED-C5C0-4708-A5FB-A29C64D9DAA8} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{DA2AE2ED-794C-47A0-BC6B-4B39AA8468E9} = {9F225282-268F-4E15-9671-5B602A32BE3D}
+		{7BC836DE-9ED0-458E-82D5-D75E48DAEFA8} = {700E4B28-C410-499D-99F3-8393F17E922D}
+		{FEEC485E-3BE9-4DA5-88E5-2F669DAAA3C5} = {700E4B28-C410-499D-99F3-8393F17E922D}
+		{25C4A32A-7DE4-43C1-835A-38EBF7BE065B} = {63880642-8276-4084-8C79-3069246B0B23}
+		{D90CD275-4AD6-4535-B0C7-401810615BC6} = {63880642-8276-4084-8C79-3069246B0B23}
+	EndGlobalSection
+EndGlobal

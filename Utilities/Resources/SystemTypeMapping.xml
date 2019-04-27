@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Type Reference Tables (http://msdn.microsoft.com/en-us/library/1dhd7f2x.aspx) -->
+<!-- Built-In Types Table C# Reference (http://msdn.microsoft.com/en-us/library/ya5y69ds.aspx) -->
+
+<SystemTypeMappings>
+	<SystemTypeMapping VBType="Boolean" CSType="bool" FrameworkType="System.Boolean" />
+	<SystemTypeMapping VBType="Byte" CSType="byte" FrameworkType="System.Byte" />
+	<SystemTypeMapping VBType="SByte" CSType="sbyte" FrameworkType="System.SByte" />
+	<SystemTypeMapping VBType="Char" CSType="char" FrameworkType="System.Char" />
+	<SystemTypeMapping VBType="Decimal" CSType="decimal" FrameworkType="System.Decimal" />
+	<SystemTypeMapping VBType="Double" CSType="double" FrameworkType="System.Double" />
+	<SystemTypeMapping VBType="Single" CSType="float" FrameworkType="System.Single" />
+	<SystemTypeMapping VBType="Integer" CSType="int" FrameworkType="System.Int32" />
+	<SystemTypeMapping VBType="UInteger" CSType="uint" FrameworkType="System.UInt32" />
+	<SystemTypeMapping VBType="Long" CSType="long" FrameworkType="System.Int64" />
+	<SystemTypeMapping VBType="ULong" CSType="ulong" FrameworkType="System.UInt64" />
+	<SystemTypeMapping VBType="Object" CSType="object" FrameworkType="System.Object" />
+	<SystemTypeMapping VBType="Short" CSType="short" FrameworkType="System.Int16" />
+	<SystemTypeMapping VBType="UShort" CSType="ushort" FrameworkType="System.UInt16" />
+	<SystemTypeMapping VBType="String" CSType="string" FrameworkType="System.String" />
+
+	<SystemTypeMapping VBType="Date" CSType="datetime" FrameworkType="System.DateTime" />
+</SystemTypeMappings>

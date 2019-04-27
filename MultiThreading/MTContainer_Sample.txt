@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using StpLibrary.MultiThreading;
+
+namespace MindBoxWSConsumerMT
+{
+	class MTContainer : MultiThreadingBase<string,string>
+	{
+		protected override void ProcessInput(int index)
+		{
+			try
+			{
+				using (HartfordESPLB.ESPWebService p = new HartfordESPLB.ESPWebService())
+				{
+					string input = base.GetInput(index);
+					string output = p.clientRequest(input);
+					base.SetOutput(index, output);
+
+					Console.WriteLine("Process... {0} on thread {1}", base.AbsoluteIndex(index), base.ThreadName);
+				}
+			}
+			catch (Exception ex)
+			{
+				// absorb error!
+				base.SetOutput(index, "ERROR: " + ex.Message);
+			}
+		}
+	}
+}

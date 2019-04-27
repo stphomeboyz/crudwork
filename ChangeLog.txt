@@ -1,0 +1,202 @@
+Minor 15:
+	- new method DataFactory.ExecuteReader to process using "yield return" and IEnumerable<DataRow>
+
+Minor 16:
+	- don't throw if unable to add key/value pair to IDictionary collection.
+
+Minor 17:
+	- DataAccess/ImportManager - delete table if keepExistingTable=true was not working
+
+Minor 18:
+	- DataAccess/SqlClient/ImportManager - need to escape single-quotes in string values.
+
+Minor 19:
+	- FileUtil.WriteStream() needs to flush (prior to close) to ensure all is written to disk
+	- WebUtil.PostURL() - remove content type string.
+
+Minor 20:
+	- WebUtil now uses HttpWebRequest (instead of WebRequest)
+
+Minor 21:
+	- Added ExecuteNonQuery to accept a DbCommand.
+	- Added ExeculeScalar to accept a DbCommand.
+
+Minor 22:
+	- Skip blank lines on FileConverter.ConvertCSV method.
+
+Minor 23:
+	- CreateNewTable has issue with Inserting row if column name is reserved words.
+	- MultiThreadingStatusDialog.cs - reduce the number of messages pump to the windows form via BeginInvoke() because it was freezing the form
+
+Minor 24:
+	- Introduce DBTextCommandList class to handle list of sql commands that should be treated as
+	Text (and not stored proc).  This is internally used by the DataFactory.NewCommand method.  Also create
+	a get property so user can add more command(s) to the list.
+
+Minor 25:
+	- ExecuteNonQuery adds @ReturnValue (type Int32) to the parameter list; and return value on completion.
+
+Minor 26:
+	- Introduce nullable types to DataConvert static methods
+
+Minor 28:
+	- Introduce DataFactory.Fill() to return a DataSet.  (Funny, somehow this was never implemented)
+
+Minor 29:
+	- DBParameter converts null to DBNull.Value.
+
+Minor 30:
+	- DataConvert.ToDbNull() - DataRow cannot allow null (null values must be converted to DbNull.Value)
+
+Minor 31:
+	- Bug in DataFactory.GetCommand() - blows up if parameters is null
+
+Minor 32:
+	- Bug with Serializer.Deserialize() methods - was not serializing correctly because the type
+	was not specified.  Now use generic <T> to specify the type, e.g. the Deserialize<T>(...)
+
+	- Introduce StringUtil.Concatenate() to concatenate list of strings
+
+Minor 33:
+	- Converted to use .NET 3.5 (previously 2.0)
+	- Added new projects: FileImporters (been here for a while but excluded for some reasons)
+	- Added new projects: DynamicRuntime
+
+Minor 34:
+	- 05/02/2009 - add support for SQLite
+
+Minor 35:
+	- 05/15/2009 - TabConverter was using comma as separator
+				 - fix the logic of Distributions.Evenly to spread out the remainders so not to exhaust the last thread
+
+Minor 36:
+	- 05/27/2009 - Added more support for exporting files (FileImporters project) and added a ConverterOptionList to
+					allow user-defined parameters.
+
+	- 06/02/2009 - new DBF class for importing and exporting DBF IV files
+
+					- Access		(can import and export)
+										- using OLEDB for importing and ADOX for exporting
+
+					- CSV/TAB		(can import and export)
+										- using mylib for both importing and exporting
+
+					- DBF			(can import and export)
+										- use OLEDB or mylib for importing
+										- use mylib for exporting
+										- exported DBF is not recognized by Excel; but, is fine with Access.
+										- there are some issues with length of numeric fields
+
+					- Excel			(can import only)
+										- use OLEDB for importing
+										- does not support exporting -- consider using third-party (CarlosAg) for exporting.
+
+					- Xml			(can import and export)
+										- use DataSet for importing and exporting
+
+	- 06/03/2009 - Convert FileUtil.ReadFile() methods to yield return IEnumerable<string> for better performance.
+				 - Added new project (StpLibrary.Models) for storing models
+				 - Remove Parsers.FileConverter class -- use FileImporter.ImportManager instead
+				 - Controls's Common class is renamed to ControlManager, to avoid confusion
+
+Minor 37:
+	- 06/09/2009 - FileImporters supports for Excel-2007 (*.xlsx) file thru Provider=Microsoft.ACE.OLEDB.12.0
+
+
+	- 06/14/2009 - DataFactory.Import (of type ImportManager) is now renamed to DataImport (of type DataImportManager)
+					to distinguish itself from the FileImporters.ImportManager class.
+
+					DataFactory.DataImport is now private.  Use DataFactory.CreateTable(...) or DataFactory.AppendTable(...)
+					instead.
+
+	- 06/17/2009 - new method ShowTab() on DataSetViewer to show tabs or hide unwanted tabs.
+
+	Build 37 - enhanced some of the features for Realign
+
+Minor 38:
+	- 06/24/2009 - fix up the Simple SQLite Query Analyzer a bit.
+				 - explicitly do something to use the SQLite DLL (so the compiler can include it as reference)
+
+
+Minor 39:
+	- 06/28/2009 - add new constructor to ConfigManager to read config via different assembly (calling/entry/executing)
+
+Minor 40:
+
+	- 06/29/2009 - cleaned up some code to use Enum.Parse() instead of the hard-coded translation.
+
+				- SQLiteQueryAnalyzer now trim the query statement - to recognize SELECT statement
+
+	- 07/08/2009 - new property MultiThreadMaster.ThreadPriority.  Default is Normal; but, the user can change
+					the priority to adjust accordingly.
+
+Minor 41:
+	- 07/17/2009 - ConfigManager.Save() unable to save.
+
+Minor 42:
+	- 07/22/2009	- Added Wizard to perform "user friendly" step-by-step wizard activity
+					- Fixed the Dbf4 class to specify a Header._Type = FoxBasePlus (0x03).  Excel now can open the DBF.
+
+	- 07/24/2009	- Converted the entire solution to Microsoft .NET 3.5.
+
+					- new OpenFileWizard to open file and then allow user to map fields
+
+	- 07/28/2009	- SQLite provider: setting CommandType = CommandType.Text throws NotSupportedException.
+
+	- 07/31/2009	- FileImport internal class (DelimiterConverter.cs) to retrieve first XXX rows using ImportMaxRows option.
+
+	- 08/03/2009	- [Cosmetic] Added signature to all *.CS files.
+
+					- [Cosmetic] Change "Original File name" of Merged DLL from StpLibrary.StpLibrary.dll to StpLibrary.dll
+
+Minor 43:
+
+	- 08/05/2008	- added new abstract DataFactory Lite class (created with SQL and SQLite)
+
+	- 08/06/2009	- BUG on the import/export csv engine (used by DelimiterConverter.csv): not using option["UseTextQualifier"] correctly
+
+Minor 44:
+
+	- 08/12/2009	- added new class StatusProgress for reporting status to client application.  Part of BackgroundTask
+
+Minor 45:
+
+	- 08/25/2009	- major change to FileImporters.  Import and Export now support strongly-typed options
+					  The conventional approach still supported; but, marked with the Obsolete attribute.
+
+	- 08/27/2009	- incorrect map for GetPrimaryKeys() COLUMN_NAME and CONSTRAINT_NAME criss-crossed.
+
+	- 09/18/2009	- New Form to display the SelectableListBox (internally use the ChooseListBox user control)
+
+	- 09/22/2009	- replace "ex.Data.Add(...)" statements with "DebuggerTool.AddData(ex, ...)" to avoid throwing exception.
+
+	- 10/15/2009	- refactored some models in DataAccess to Models.
+					- The Import and Export method in ImportManager to parse the string-type options.
+					- Update the File Import methods in the QueryAnything DataSetTools to call the ImportManager.
+					- Added new property to the IStatement interface in the DataSetTools
+					- Support some QA statements in the SQLite Simple Query Analyser.
+
+	- 10/22/2009	- fixed ConnectionStringManager.Parse() to handle semicolon/equal char correctly.
+					  Provider="Microsoft.Jet.OLEDB.4.0"; Data Source="c:\foo;bar=none.xls"; user id="admin"; password=""; Extended Properties="Excel 8.0; HDR=Yes; IMEX=1";
+					- added new ConnectionStringParser in the Parsers project for this.
+
+	- 11/10/2009	- two fixes to SimpleDataSetViewer user control.
+						1) The status to display the correct # of rows and columns.
+						2) The order of the column is reset each time a table is selected.
+
+	- 11/12/2009	- ported some projects over to Silverlight project.
+
+	- 11/27/2009	- new methods to DataConvert to convert data to System.Guid:
+
+						DataConvert.ToGuid( /*...*/ );
+						DataConvert.ToNullableGuid( /*...*/ );
+
+	- 02/22/2010	- fix bug in DataImportWizard to process data file type
+
+					- OneDataColumn() and OneDataValue() to support Byte type.
+					
+Major 2.2.0.1:
+
+	- 03/17/2010	- renaming library to crudwork.  Start with version 2.2.0.1.
+
+
